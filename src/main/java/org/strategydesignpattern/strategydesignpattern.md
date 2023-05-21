@@ -31,7 +31,7 @@ Developer taught that specs are changing in every board meeting and he comes wit
 
 ### Design with Interfaces
 
-![interfaces](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/strategydesignpattern/withinterfaces/withinterfaces.png) 
+![interfaces](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/strategydesignpattern/withinterfaces/withinterfaces.png) 
 
 Developer brings this design to manager to review. Manager asked the Developer, **Is it perfect design to Implement our specs ?**
 
@@ -61,7 +61,7 @@ Later Developer made a brainstorm and observed what are the specs **frequently c
   
 and **he encapsulated the changed specs in Car class** and he made a final design like this.
 
-![strategypattern](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/strategydesignpattern/finalstrategypattern/finalStrategyPattern.png) 
+![strategypattern](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/strategydesignpattern/finalstrategypattern/finalStrategyPattern.png) 
 
  
 

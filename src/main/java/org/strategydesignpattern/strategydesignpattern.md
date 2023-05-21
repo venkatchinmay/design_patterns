@@ -16,7 +16,7 @@ Managers assigned this task to one of the developer to implement the "**Auto gea
 ### Initial Implementation of Auto gear : 
 
 
-![AutoGear](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/strategydesignpattern/implementautogear/implementautogear.png) 
+![AutoGear](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/strategydesignpattern/implementautogear/implementautogear.png) 
 
 Manager start giving demo in front of the Board members and they surprised that **Ambassador** and **Alto** had **Auto gear** Feature and they decided that we can't afford this feature to these cars and asked manager to remove Auto gear feature in these cars.
 

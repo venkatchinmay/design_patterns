@@ -1,0 +1,58 @@
+@startuml
+interface org.strategydesignpattern.withinterfaces.Fuel {
++ void fuel()
+}
+abstract class org.strategydesignpattern.withinterfaces.Car {
++ {abstract}void name()
++ void tyres()
++ void headLamps()
+}
+class org.strategydesignpattern.withinterfaces.Swift {
++ void name()
++ void engine()
++ void fuel()
++ void isAutoGear()
+}
+class org.strategydesignpattern.withinterfaces.Ambassador {
++ void name()
++ void engine()
++ void isAutoGear()
++ void fuel()
+}
+class org.strategydesignpattern.withinterfaces.Alto {
++ void name()
++ void engine()
++ void isAutoGear()
++ void fuel()
+}
+interface org.strategydesignpattern.withinterfaces.Gear {
++ void isAutoGear()
+}
+class org.strategydesignpattern.withinterfaces.Baleno {
++ void name()
++ void engine()
++ void fuel()
++ void isAutoGear()
+}
+interface org.strategydesignpattern.withinterfaces.Engine {
++ void engine()
+}
+
+
+org.strategydesignpattern.withinterfaces.Engine <|.. org.strategydesignpattern.withinterfaces.Swift
+org.strategydesignpattern.withinterfaces.Fuel <|.. org.strategydesignpattern.withinterfaces.Swift
+org.strategydesignpattern.withinterfaces.Gear <|.. org.strategydesignpattern.withinterfaces.Swift
+org.strategydesignpattern.withinterfaces.Car <|-- org.strategydesignpattern.withinterfaces.Swift
+org.strategydesignpattern.withinterfaces.Engine <|.. org.strategydesignpattern.withinterfaces.Ambassador
+org.strategydesignpattern.withinterfaces.Fuel <|.. org.strategydesignpattern.withinterfaces.Ambassador
+org.strategydesignpattern.withinterfaces.Gear <|.. org.strategydesignpattern.withinterfaces.Ambassador
+org.strategydesignpattern.withinterfaces.Car <|-- org.strategydesignpattern.withinterfaces.Ambassador
+org.strategydesignpattern.withinterfaces.Engine <|.. org.strategydesignpattern.withinterfaces.Alto
+org.strategydesignpattern.withinterfaces.Fuel <|.. org.strategydesignpattern.withinterfaces.Alto
+org.strategydesignpattern.withinterfaces.Gear <|.. org.strategydesignpattern.withinterfaces.Alto
+org.strategydesignpattern.withinterfaces.Car <|-- org.strategydesignpattern.withinterfaces.Alto
+org.strategydesignpattern.withinterfaces.Engine <|.. org.strategydesignpattern.withinterfaces.Baleno
+org.strategydesignpattern.withinterfaces.Fuel <|.. org.strategydesignpattern.withinterfaces.Baleno
+org.strategydesignpattern.withinterfaces.Gear <|.. org.strategydesignpattern.withinterfaces.Baleno
+org.strategydesignpattern.withinterfaces.Car <|-- org.strategydesignpattern.withinterfaces.Baleno
+@enduml

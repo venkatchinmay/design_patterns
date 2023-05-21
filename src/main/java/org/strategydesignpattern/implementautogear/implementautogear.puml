@@ -1,0 +1,30 @@
+@startuml
+class org.strategydesignpattern.implementautogear.Baleno {
++ void name()
+}
+abstract class org.strategydesignpattern.implementautogear.Car {
++ {abstract}void name()
++ void fuel()
++ void engine()
++ void tyres()
++ void headLamps()
++ void isAutoGear()
+}
+class org.strategydesignpattern.implementautogear.Swift {
++ void name()
++ void engine()
++ void fuel()
+}
+class org.strategydesignpattern.implementautogear.Alto {
++ void name()
+}
+class org.strategydesignpattern.implementautogear.Ambassador {
++ void name()
+}
+
+
+org.strategydesignpattern.implementautogear.Car <|-- org.strategydesignpattern.implementautogear.Baleno
+org.strategydesignpattern.implementautogear.Car <|-- org.strategydesignpattern.implementautogear.Swift
+org.strategydesignpattern.implementautogear.Car <|-- org.strategydesignpattern.implementautogear.Alto
+org.strategydesignpattern.implementautogear.Car <|-- org.strategydesignpattern.implementautogear.Ambassador
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+class org.strategydesignpattern.initialdesign.Ambassador {
++ void name()
+}
+class org.strategydesignpattern.initialdesign.Baleno {
++ void name()
+}
+class org.strategydesignpattern.initialdesign.Swift {
++ void name()
+}
+class org.strategydesignpattern.initialdesign.Alto {
++ void name()
+}
+abstract class org.strategydesignpattern.initialdesign.Car {
++ {abstract}void name()
++ void fuel()
++ void engine()
++ void tyres()
++ void headLamps()
+}
+
+
+org.strategydesignpattern.initialdesign.Car <|-- org.strategydesignpattern.initialdesign.Ambassador
+org.strategydesignpattern.initialdesign.Car <|-- org.strategydesignpattern.initialdesign.Baleno
+org.strategydesignpattern.initialdesign.Car <|-- org.strategydesignpattern.initialdesign.Swift
+org.strategydesignpattern.initialdesign.Car <|-- org.strategydesignpattern.initialdesign.Alto
+@enduml

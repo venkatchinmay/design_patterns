@@ -1,0 +1,82 @@
+@startuml
+class org.strategydesignpattern.finalstrategypattern.RunningOfPattern {
++ {static} void main(String[])
+}
+class org.strategydesignpattern.finalstrategypattern.Baleno {
++ void name()
+}
+interface org.strategydesignpattern.finalstrategypattern.fuel.Fuel {
++ String fuel()
+}
+class org.strategydesignpattern.finalstrategypattern.engine.SimplePetrolEngine {
++ String engine()
+}
+class org.strategydesignpattern.finalstrategypattern.Ambassador {
++ void name()
+}
+class org.strategydesignpattern.finalstrategypattern.gear.AutoGear {
++ String isAutoGear()
+}
+interface org.strategydesignpattern.finalstrategypattern.gear.Gear {
++ String isAutoGear()
+}
+class org.strategydesignpattern.finalstrategypattern.gear.NormalGear {
++ String isAutoGear()
+}
+class org.strategydesignpattern.finalstrategypattern.Swift {
++ void name()
+}
+class org.strategydesignpattern.finalstrategypattern.fuel.Electric {
++ String fuel()
+}
+class org.strategydesignpattern.finalstrategypattern.fuel.Diesel {
++ String fuel()
+}
+abstract class org.strategydesignpattern.finalstrategypattern.Car {
+- Engine engine
+- Fuel fuel
+- Gear gear
++ {abstract}void name()
++ void tyres()
++ void headLamps()
++ String getEngine()
++ void setEngine(Engine)
++ String getFuel()
++ void setFuel(Fuel)
++ String getGear()
++ void setGear(Gear)
+}
+class org.strategydesignpattern.finalstrategypattern.engine.FourStrokeEngine {
++ String engine()
+}
+class org.strategydesignpattern.finalstrategypattern.engine.ElectricEngine {
++ String engine()
+}
+interface org.strategydesignpattern.finalstrategypattern.engine.Engine {
++ String engine()
+}
+class org.strategydesignpattern.finalstrategypattern.engine.DieselEngine {
++ String engine()
+}
+class org.strategydesignpattern.finalstrategypattern.Alto {
++ void name()
+}
+class org.strategydesignpattern.finalstrategypattern.fuel.Petrol {
++ String fuel()
+}
+
+
+org.strategydesignpattern.finalstrategypattern.Car <|-- org.strategydesignpattern.finalstrategypattern.Baleno
+org.strategydesignpattern.finalstrategypattern.engine.Engine <|.. org.strategydesignpattern.finalstrategypattern.engine.SimplePetrolEngine
+org.strategydesignpattern.finalstrategypattern.Car <|-- org.strategydesignpattern.finalstrategypattern.Ambassador
+org.strategydesignpattern.finalstrategypattern.gear.Gear <|.. org.strategydesignpattern.finalstrategypattern.gear.AutoGear
+org.strategydesignpattern.finalstrategypattern.gear.Gear <|.. org.strategydesignpattern.finalstrategypattern.gear.NormalGear
+org.strategydesignpattern.finalstrategypattern.Car <|-- org.strategydesignpattern.finalstrategypattern.Swift
+org.strategydesignpattern.finalstrategypattern.fuel.Fuel <|.. org.strategydesignpattern.finalstrategypattern.fuel.Electric
+org.strategydesignpattern.finalstrategypattern.fuel.Fuel <|.. org.strategydesignpattern.finalstrategypattern.fuel.Diesel
+org.strategydesignpattern.finalstrategypattern.engine.Engine <|.. org.strategydesignpattern.finalstrategypattern.engine.FourStrokeEngine
+org.strategydesignpattern.finalstrategypattern.engine.Engine <|.. org.strategydesignpattern.finalstrategypattern.engine.ElectricEngine
+org.strategydesignpattern.finalstrategypattern.engine.Engine <|.. org.strategydesignpattern.finalstrategypattern.engine.DieselEngine
+org.strategydesignpattern.finalstrategypattern.Car <|-- org.strategydesignpattern.finalstrategypattern.Alto
+org.strategydesignpattern.finalstrategypattern.fuel.Fuel <|.. org.strategydesignpattern.finalstrategypattern.fuel.Petrol
+@enduml

@@ -4,7 +4,7 @@ Let's Imagine we are in the Car Development Software Company and we are having C
 
 ### Initial Design of the Software
 
-![intialDesign](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/strategydesignpattern/initialdesign/initialdesign.png) 
+![intialDesign](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/strategydesignpattern/initialdesign/initialdesign.png) 
 
 we implemented the all features of car like fuel,engine,tyres and head lamps etc ....
 

@@ -1,0 +1,70 @@
+@startuml
+class org.observerdesignpattern.initialdesign.SyntheticMonitoring {
+- String clientID
+- long ts
+- double value
+- String metricName
+- String location
+- void setClientID(String)
++ String getClientID()
++ long getTs()
+- void setTs(long)
++ double getValue()
+- void setValue(double)
+- void setMetricName(String)
++ String getMetricName()
++ String getLocation()
+- void setLocation(String)
++ Object createView(JSONObject)
+}
+interface org.observerdesignpattern.initialdesign.CreateView {
++ Object createView(JSONObject)
+}
+class org.observerdesignpattern.initialdesign.AlertProcessing {
+- String clientID
+- double criticalThreshold
+- double warningThreshold
+- double value
+- String metricName
++ String getClientID()
+- void setClientID(String)
++ double getCriticalThreshold()
+- void setCriticalThreshold(double)
++ double getWarningThreshold()
+- void setWarningThreshold(double)
++ double getValue()
+- void setValue(double)
++ String getMetricName()
+- void setMetricName(String)
++ Object createView(JSONObject)
+}
+class org.observerdesignpattern.initialdesign.MetricData {
+- JSONObject jsonObject
++ AlertProcessing getAlertProcessing()
++ MetricProcessing getMetricProcessing()
++ SyntheticMonitoring getSyntheticMonitoring()
+}
+class org.observerdesignpattern.initialdesign.execution.Execution {
++ {static} void main(String[])
+}
+class org.observerdesignpattern.initialdesign.MetricProcessing {
+- String clientID
+- long ts
+- double value
+- String metricName
+- void setClientID(String)
++ String getClientID()
++ long getTs()
+- void setTs(long)
++ double getValue()
+- void setValue(double)
+- void setMetricName(String)
++ String getMetricName()
++ Object createView(JSONObject)
+}
+
+
+org.observerdesignpattern.initialdesign.CreateView <|.. org.observerdesignpattern.initialdesign.SyntheticMonitoring
+org.observerdesignpattern.initialdesign.CreateView <|.. org.observerdesignpattern.initialdesign.AlertProcessing
+org.observerdesignpattern.initialdesign.CreateView <|.. org.observerdesignpattern.initialdesign.MetricProcessing
+@enduml

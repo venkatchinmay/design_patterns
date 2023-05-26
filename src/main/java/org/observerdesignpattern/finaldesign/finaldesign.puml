@@ -1,0 +1,95 @@
+@startuml
+interface org.observerdesignpattern.finaldesign.Subject {
++ void addObserver(Observer)
++ void removeObserver(Observer)
++ void notifyObserver(List<Observer>)
+}
+class org.observerdesignpattern.finaldesign.SyntheticMonitoring {
+- String clientID
+- long ts
+- double value
+- String metricName
+- String location
+~ MetricData metricData
+- void setClientID(String)
++ String getClientID()
++ long getTs()
+- void setTs(long)
++ double getValue()
+- void setValue(double)
+- void setMetricName(String)
++ String getMetricName()
++ String getLocation()
+- void setLocation(String)
++ void createView(JSONObject)
++ Object getView()
++ void update()
+}
+class org.observerdesignpattern.finaldesign.MetricData {
+- JSONObject jsonObject
++ {static} List<Observer> observers
++ JSONObject getJsonObject()
++ void receiveMetricData(JSONObject)
++ void addObserver(Observer)
++ void removeObserver(Observer)
++ void notifyObserver(List<Observer>)
+}
+class org.observerdesignpattern.finaldesign.execution.Execution {
++ {static} void main(String[])
+}
+class org.observerdesignpattern.finaldesign.MetricProcessing {
+- MetricData metricData
+- String clientID
+- long ts
+- double value
+- String metricName
+- void setClientID(String)
++ String getClientID()
++ long getTs()
+- void setTs(long)
++ double getValue()
+- void setValue(double)
+- void setMetricName(String)
++ String getMetricName()
++ void createView(JSONObject)
++ Object getView()
++ void update()
+}
+interface org.observerdesignpattern.finaldesign.Observer {
++ void update()
+}
+class org.observerdesignpattern.finaldesign.AlertProcessing {
+- String clientID
+- double criticalThreshold
+- double warningThreshold
+- double value
+- String metricName
+- MetricData metricData
++ String getClientID()
+- void setClientID(String)
++ double getCriticalThreshold()
+- void setCriticalThreshold(double)
++ double getWarningThreshold()
+- void setWarningThreshold(double)
++ double getValue()
+- void setValue(double)
++ String getMetricName()
+- void setMetricName(String)
++ void createView(JSONObject)
++ Object getView()
++ void update()
+}
+interface org.observerdesignpattern.finaldesign.View {
++ void createView(JSONObject)
++ Object getView()
+}
+
+
+org.observerdesignpattern.finaldesign.View <|.. org.observerdesignpattern.finaldesign.SyntheticMonitoring
+org.observerdesignpattern.finaldesign.Observer <|.. org.observerdesignpattern.finaldesign.SyntheticMonitoring
+org.observerdesignpattern.finaldesign.Subject <|.. org.observerdesignpattern.finaldesign.MetricData
+org.observerdesignpattern.finaldesign.View <|.. org.observerdesignpattern.finaldesign.MetricProcessing
+org.observerdesignpattern.finaldesign.Observer <|.. org.observerdesignpattern.finaldesign.MetricProcessing
+org.observerdesignpattern.finaldesign.Observer <|.. org.observerdesignpattern.finaldesign.AlertProcessing
+org.observerdesignpattern.finaldesign.View <|.. org.observerdesignpattern.finaldesign.AlertProcessing
+@enduml

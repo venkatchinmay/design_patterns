@@ -4,7 +4,7 @@ Let's Imagine we are in the Car Development Software Company and we are having C
 
 ### Initial Design of the Software
 
-![intialDesign](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/strategydesignpattern/initialdesign/initialdesign.png) 
+![intialDesign](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/strategydesignpattern/initialdesign/initialdesign.png) 
 
 we implemented the all features of car like fuel,engine,tyres and head lamps etc ....
 
@@ -16,7 +16,7 @@ Managers assigned this task to one of the developer to implement the "**Auto gea
 ### Initial Implementation of Auto gear : 
 
 
-![AutoGear](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/strategydesignpattern/implementautogear/implementautogear.png) 
+![AutoGear](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/strategydesignpattern/implementautogear/implementautogear.png) 
 
 Manager start giving demo in front of the Board members and they surprised that **Ambassador** and **Alto** had **Auto gear** Feature and they decided that we can't afford this feature to these cars and asked manager to remove Auto gear feature in these cars.
 
@@ -31,7 +31,7 @@ Developer taught that specs are changing in every board meeting and he comes wit
 
 ### Design with Interfaces
 
-![interfaces](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/strategydesignpattern/withinterfaces/withinterfaces.png) 
+![interfaces](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/strategydesignpattern/withinterfaces/withinterfaces.png) 
 
 Developer brings this design to manager to review. Manager asked the Developer, **Is it perfect design to Implement our specs ?**
 
@@ -61,7 +61,7 @@ Later Developer made a brainstorm and observed what are the specs **frequently c
   
 and **he encapsulated the changed specs in Car class** and he made a final design like this.
 
-![strategypattern](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/strategydesignpattern/finalstrategypattern/finalStrategyPattern.png) 
+![strategypattern](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/strategydesignpattern/finalstrategypattern/finalStrategyPattern.png) 
 
  
 

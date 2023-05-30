@@ -16,7 +16,7 @@ Initially we have three views.
 
 Initially we come with the below-mentioned design 
 
-![Initial Design](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/observerdesignpattern/initialdesign/initialdesign.png)
+![Initial Design](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/observerdesignpattern/initialdesign/initialdesign.png)
 
 
 Let's Analyse the drawbacks of our Initial Design: 
@@ -46,7 +46,7 @@ Metric Data is the Subject, views are the Observers
 
 we can add and remove the Observer at any point of time. 
 
-![Final Design](/home/chinmay/git_projects/My_projects/design_patterns/src/main/java/org/observerdesignpattern/finaldesign/finaldesign.png)
+![Final Design](https://github.com/venkatchinmay/design_patterns/blob/master/src/main/java/org/observerdesignpattern/finaldesign/finaldesign.png)
 
 In the above design we observed below points 
 

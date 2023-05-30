@@ -12,7 +12,7 @@ public class MetricData implements Subject {
     }
 
     private JSONObject jsonObject;
-    public static List<Observer> observers = new ArrayList<>();
+    private static List<Observer> observers = new ArrayList<>();
     public void receiveMetricData(JSONObject jsonObject){
        this.jsonObject = jsonObject;
        this.notifyObserver(observers);
